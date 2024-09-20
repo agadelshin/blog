@@ -1,0 +1,4 @@
+baseURL = 'https://blog.akg-itc.org/'
+languageCode = 'en-us'
+title = 'AKG blog'
+theme = 'PaperMod'
