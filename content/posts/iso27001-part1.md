@@ -10,7 +10,7 @@ First, preparing for an audit is a long process of collecting evidence and addre
 your organization has documentation and a culture of keeping all the docs up-to-date. You probably will have some sort of spreadsheet with a list of controls,
 links to documentation related to this control and links to issues if some improvement is required. Ideally, these documents and issues should also link back to the specific control they implement. This approach provides clear traceability, helping you understand the rationale behind certain processes and implementations.
 
-Ofthen, documentation and well-documented processes are more important than perfect implementation. Even if you have some temporary workaround, as long as it's documented, you'll be in a good position. Perfection isn't the goal, but awareness of what's happening in your infrastructure is crucial.
+Often, documentation and well-documented processes are more important than perfect implementation. Even if you have some temporary workaround, as long as it's documented, you'll be in a good position. Perfection isn't the goal, but awareness of what's happening in your infrastructure is crucial.
 
 I've gone through this preparation several times, including creating control spreadsheets from scratch for new infrastructure together with CISO/security departments.
 It's no secret we use the same infrastructure components everywhere (e.g., Github, Terraform, AWS/GCP/Azure, Kubernetes, etc), like building blocks. What we can do actually is secure those building blocks by default, avoiding the repetitive task of identifying requirements each time.
