@@ -6,9 +6,7 @@ date = 2024-09-20T22:53:41+02:00
 Security audits are always challenging, and they're even harder if you're doing one for the first time. ISO 27001 requires collaboration between the IT department, HR, the CISO and SRE team (or Platform team). I'd like to focus on technological controls, specifically what can be implemented in cloud infrastructure
 and how to make our life a little bit easier.
 
-First, preparing for an audit is a long process of collecting evidence and addressing any gaps we found. It's much easier to pass an audit if 
-your organization has documentation and a culture of keeping all the docs up-to-date. You probably will have some sort of spreadsheet with a list of controls,
-links to documentation related to this control and links to issues if some improvement is required. Ideally, these documents and issues should also link back to the specific control they implement. This approach provides clear traceability, helping you understand the rationale behind certain processes and implementations.
+First, preparing for an audit is a long process of collecting evidence and addressing any gaps we found. It's much easier to pass an audit if your organization has documentation and a culture of keeping all the docs up-to-date. You probably will have some sort of spreadsheet with a list of controls, links to documentation related to this control and links to issues if some improvement is required. Ideally, these documents and issues should also link back to the specific control they implement. This approach provides clear traceability, helping you understand the rationale behind certain processes and implementations.
 
 Often, documentation and well-documented processes are more important than perfect implementation. Even if you have some temporary workaround, as long as it's documented, you'll be in a good position. Perfection isn't the goal, but awareness of what's happening in your infrastructure is crucial.
 
