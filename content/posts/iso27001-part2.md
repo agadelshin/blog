@@ -27,7 +27,7 @@ region = us-east-1
 source_profile = default
 ```
 
-In this case when user is logged in to AWS Console or run `aws` CLI, there is no way something could be changed. AWS profile should be specified to perform any operation that'll change something or, in case of AWS Console, user must use Switch Role in UI and be aware that actions could cause some damage. This approach also allows us to create a permission elevation system. For example, Lambda function could be triggered to allow user to assume `production-rw` role for short amount of time and another Lambda function clean up all the privilege access after specific amount of time. This function also can go through the CloudTrail events, gather all the changes caused by this user and prepare a report.
+In this case when user is logged in to AWS Console or run `aws` CLI, there is no way something could be changed. AWS profile should be specified to perform any operation that'll change something or, in case of AWS Console, user must use Switch Role in UI and be aware that actions could cause some damage. This approach also allows us to create a permission elevation system. For example, Lambda function could be triggered to allow user to assume `FullAccessRole` role for short amount of time and another Lambda function clean up all the privilege access after specific amount of time. This function also can go through the CloudTrail events, gather all the changes caused by this user and prepare a report.
 
 Another great option is short TTL credentials. For example Hashicorp Vault allows to control service credentials like SSH keys or Database passwords, user has to specifically request for it and this access will be revoked shortly after.
 
