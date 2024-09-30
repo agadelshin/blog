@@ -15,16 +15,8 @@ module "eks" {
 
   cluster_addons = {
     aws-ebs-csi-driver = {
-      most_recent = true
-      configuration_values = jsonencode({
-        controller = {
-          serviceAccount = {
-            annotations = {
-              "eks.amazonaws.com/role-arn" = "${aws_iam_role.aws_csi.arn}"
-            }
-          }
-        }
-      })
+      most_recent              = true
+      service_account_role_arn = aws_iam_role.aws_csi.arn
     }
   }
 
