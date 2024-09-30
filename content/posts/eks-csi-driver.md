@@ -4,7 +4,7 @@ date = 2024-09-30T19:07:31+02:00
 draft = false
 +++
 
-For some non-obvious reason it wasn't straight-forward how to deploy/configure AWS EBS CSI controller even after reading the docs. Key thing here is you have to install csi driver yourself and the easiest way to do it is to use EKS addons. You can also tweak eks addons deployment using `configuration_values` property to add an annotation to service account so it will actually have an access to create EBS volumes.
+For some non-obvious reason it wasn't straight-forward how to deploy/configure AWS EBS CSI controller even after reading the docs. Key thing here is you have to install csi driver yourself and the easiest way to do it is to use EKS addons. You can also tweak eks addons deployment using `configuration_values` property to change resources, add nodeSelector, etc.
 
 Here is the terraform configuration for that with some ommited fields not related to the configuration of storage
 
