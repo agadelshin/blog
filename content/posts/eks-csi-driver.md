@@ -30,7 +30,7 @@ module "eks" {
 }
 
 resource "aws_iam_role" "aws_csi" {
-  name = "${local.generated_name}-aws-csi"
+  name = "eks-aws-csi"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -51,8 +51,6 @@ resource "aws_iam_role" "aws_csi" {
       },
     ]
   })
-
-  tags = var.tags
 }
 
 resource "aws_iam_role_policy_attachment" "aws_csi" {
